@@ -1,5 +1,5 @@
 - name: security
-  type: category
+  type: group
   children:
     - name: authentication
       type: group

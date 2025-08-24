@@ -1,5 +1,5 @@
 - name: ecommerce
-  type: category
+  type: group
   children:
     - name: order
       type: group

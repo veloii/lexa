@@ -204,6 +204,7 @@ final public class FoundationModelStructuredMessageService: StructuredMessageSer
         ).respond(
             to: messageContent,
             schema: generationSchema,
+            includeSchemaInPrompt: false,
             options: options
         )
         

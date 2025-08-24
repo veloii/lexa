@@ -1,0 +1,1364 @@
+mil_sha256: 057fb27554ec363ab856742c36fd781339b9cf76369020b5fdeb6ca906832851
+source_mil: bolt://dh3vn9v6zz/model.mil
+weights_mapping:
+  decoder.emb.token_emb._embedding:
+    blobs:
+      scales:
+        offset: 64
+      values:
+        offset: 5400128
+    format: linear_4bits
+    shape:
+    - 153600
+    - 256
+  decoder.output_norm.scale:
+    blobs:
+      values:
+        offset: 5399552
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer0.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 628608
+      lut_palette:
+        offset: 726976
+      scales:
+        offset: 728576
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer0.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 730176
+      lut_palette:
+        offset: 828544
+      scales:
+        offset: 830144
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer0.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 831744
+      lut_palette:
+        offset: 930112
+      scales:
+        offset: 930688
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer0.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 628032
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer0.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 559616
+      lut_palette:
+        offset: 576064
+      scales:
+        offset: 576384
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer0.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 525632
+      lut_palette:
+        offset: 558464
+      scales:
+        offset: 559040
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer0.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 576704
+      lut_palette:
+        offset: 593152
+      scales:
+        offset: 593472
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer0.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 594048
+      lut_palette:
+        offset: 626880
+      scales:
+        offset: 627456
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer0.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 593920
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer0.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 593792
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer0.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 525056
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer1.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 1034816
+      lut_palette:
+        offset: 1133184
+      scales:
+        offset: 1134784
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer1.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 1136384
+      lut_palette:
+        offset: 1234752
+      scales:
+        offset: 1236352
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer1.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 1237952
+      lut_palette:
+        offset: 1336320
+      scales:
+        offset: 1336896
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer1.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 1034240
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer1.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 965824
+      lut_palette:
+        offset: 982272
+      scales:
+        offset: 982592
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer1.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 931840
+      lut_palette:
+        offset: 964672
+      scales:
+        offset: 965248
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer1.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 982912
+      lut_palette:
+        offset: 999360
+      scales:
+        offset: 999680
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer1.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 1000256
+      lut_palette:
+        offset: 1033088
+      scales:
+        offset: 1033664
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer1.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 1000128
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer1.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 1000000
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer1.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 931264
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer10.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 4690688
+      lut_palette:
+        offset: 4789056
+      scales:
+        offset: 4790656
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer10.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 4792256
+      lut_palette:
+        offset: 4890624
+      scales:
+        offset: 4892224
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer10.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 4893824
+      lut_palette:
+        offset: 4992192
+      scales:
+        offset: 4992768
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer10.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 4690112
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer10.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4621696
+      lut_palette:
+        offset: 4638144
+      scales:
+        offset: 4638464
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer10.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4587712
+      lut_palette:
+        offset: 4620544
+      scales:
+        offset: 4621120
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer10.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4638784
+      lut_palette:
+        offset: 4655232
+      scales:
+        offset: 4655552
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer10.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 4656128
+      lut_palette:
+        offset: 4688960
+      scales:
+        offset: 4689536
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer10.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 4656000
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer10.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 4655872
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer10.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 4587136
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer11.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 5096896
+      lut_palette:
+        offset: 5195264
+      scales:
+        offset: 5196864
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer11.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 5198464
+      lut_palette:
+        offset: 5296832
+      scales:
+        offset: 5298432
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer11.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 5300032
+      lut_palette:
+        offset: 5398400
+      scales:
+        offset: 5398976
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer11.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 5096320
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer11.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 5027904
+      lut_palette:
+        offset: 5044352
+      scales:
+        offset: 5044672
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer11.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4993920
+      lut_palette:
+        offset: 5026752
+      scales:
+        offset: 5027328
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer11.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 5044992
+      lut_palette:
+        offset: 5061440
+      scales:
+        offset: 5061760
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer11.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 5062336
+      lut_palette:
+        offset: 5095168
+      scales:
+        offset: 5095744
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer11.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 5062208
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer11.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 5062080
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer11.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 4993344
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer2.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 1441024
+      lut_palette:
+        offset: 1539392
+      scales:
+        offset: 1540992
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer2.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 1542592
+      lut_palette:
+        offset: 1640960
+      scales:
+        offset: 1642560
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer2.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 1644160
+      lut_palette:
+        offset: 1742528
+      scales:
+        offset: 1743104
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer2.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 1440448
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer2.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1372032
+      lut_palette:
+        offset: 1388480
+      scales:
+        offset: 1388800
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer2.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1338048
+      lut_palette:
+        offset: 1370880
+      scales:
+        offset: 1371456
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer2.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1389120
+      lut_palette:
+        offset: 1405568
+      scales:
+        offset: 1405888
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer2.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 1406464
+      lut_palette:
+        offset: 1439296
+      scales:
+        offset: 1439872
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer2.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 1406336
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer2.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 1406208
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer2.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 1337472
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer3.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 1847232
+      lut_palette:
+        offset: 1945600
+      scales:
+        offset: 1947200
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer3.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 1948800
+      lut_palette:
+        offset: 2047168
+      scales:
+        offset: 2048768
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer3.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 2050368
+      lut_palette:
+        offset: 2148736
+      scales:
+        offset: 2149312
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer3.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 1846656
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer3.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1778240
+      lut_palette:
+        offset: 1794688
+      scales:
+        offset: 1795008
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer3.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1744256
+      lut_palette:
+        offset: 1777088
+      scales:
+        offset: 1777664
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer3.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 1795328
+      lut_palette:
+        offset: 1811776
+      scales:
+        offset: 1812096
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer3.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 1812672
+      lut_palette:
+        offset: 1845504
+      scales:
+        offset: 1846080
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer3.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 1812544
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer3.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 1812416
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer3.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 1743680
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer4.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 2253440
+      lut_palette:
+        offset: 2351808
+      scales:
+        offset: 2353408
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer4.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 2355008
+      lut_palette:
+        offset: 2453376
+      scales:
+        offset: 2454976
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer4.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 2456576
+      lut_palette:
+        offset: 2554944
+      scales:
+        offset: 2555520
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer4.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 2252864
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer4.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2184448
+      lut_palette:
+        offset: 2200896
+      scales:
+        offset: 2201216
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer4.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2150464
+      lut_palette:
+        offset: 2183296
+      scales:
+        offset: 2183872
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer4.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2201536
+      lut_palette:
+        offset: 2217984
+      scales:
+        offset: 2218304
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer4.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 2218880
+      lut_palette:
+        offset: 2251712
+      scales:
+        offset: 2252288
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer4.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 2218752
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer4.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 2218624
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer4.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 2149888
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer5.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 2659648
+      lut_palette:
+        offset: 2758016
+      scales:
+        offset: 2759616
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer5.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 2761216
+      lut_palette:
+        offset: 2859584
+      scales:
+        offset: 2861184
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer5.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 2862784
+      lut_palette:
+        offset: 2961152
+      scales:
+        offset: 2961728
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer5.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 2659072
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer5.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2590656
+      lut_palette:
+        offset: 2607104
+      scales:
+        offset: 2607424
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer5.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2556672
+      lut_palette:
+        offset: 2589504
+      scales:
+        offset: 2590080
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer5.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2607744
+      lut_palette:
+        offset: 2624192
+      scales:
+        offset: 2624512
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer5.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 2625088
+      lut_palette:
+        offset: 2657920
+      scales:
+        offset: 2658496
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer5.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 2624960
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer5.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 2624832
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer5.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 2556096
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer6.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 3065856
+      lut_palette:
+        offset: 3164224
+      scales:
+        offset: 3165824
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer6.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 3167424
+      lut_palette:
+        offset: 3265792
+      scales:
+        offset: 3267392
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer6.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 3268992
+      lut_palette:
+        offset: 3367360
+      scales:
+        offset: 3367936
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer6.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 3065280
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer6.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2996864
+      lut_palette:
+        offset: 3013312
+      scales:
+        offset: 3013632
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer6.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 2962880
+      lut_palette:
+        offset: 2995712
+      scales:
+        offset: 2996288
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer6.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3013952
+      lut_palette:
+        offset: 3030400
+      scales:
+        offset: 3030720
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer6.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 3031296
+      lut_palette:
+        offset: 3064128
+      scales:
+        offset: 3064704
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer6.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 3031168
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer6.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 3031040
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer6.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 2962304
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer7.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 3472064
+      lut_palette:
+        offset: 3570432
+      scales:
+        offset: 3572032
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer7.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 3573632
+      lut_palette:
+        offset: 3672000
+      scales:
+        offset: 3673600
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer7.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 3675200
+      lut_palette:
+        offset: 3773568
+      scales:
+        offset: 3774144
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer7.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 3471488
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer7.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3403072
+      lut_palette:
+        offset: 3419520
+      scales:
+        offset: 3419840
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer7.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3369088
+      lut_palette:
+        offset: 3401920
+      scales:
+        offset: 3402496
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer7.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3420160
+      lut_palette:
+        offset: 3436608
+      scales:
+        offset: 3436928
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer7.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 3437504
+      lut_palette:
+        offset: 3470336
+      scales:
+        offset: 3470912
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer7.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 3437376
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer7.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 3437248
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer7.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 3368512
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer8.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 3878272
+      lut_palette:
+        offset: 3976640
+      scales:
+        offset: 3978240
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer8.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 3979840
+      lut_palette:
+        offset: 4078208
+      scales:
+        offset: 4079808
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer8.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 4081408
+      lut_palette:
+        offset: 4179776
+      scales:
+        offset: 4180352
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer8.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 3877696
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer8.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3809280
+      lut_palette:
+        offset: 3825728
+      scales:
+        offset: 3826048
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer8.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3775296
+      lut_palette:
+        offset: 3808128
+      scales:
+        offset: 3808704
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer8.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 3826368
+      lut_palette:
+        offset: 3842816
+      scales:
+        offset: 3843136
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer8.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 3843712
+      lut_palette:
+        offset: 3876544
+      scales:
+        offset: 3877120
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer8.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 3843584
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer8.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 3843456
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer8.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 3774720
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer9.feed_forward.linear1_0.kernel:
+    blobs:
+      lut_indices:
+        offset: 4284480
+      lut_palette:
+        offset: 4382848
+      scales:
+        offset: 4384448
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer9.feed_forward.linear1_1.kernel:
+    blobs:
+      lut_indices:
+        offset: 4386048
+      lut_palette:
+        offset: 4484416
+      scales:
+        offset: 4486016
+    format: lut_4bits
+    shape:
+    - 768
+    - 256
+  decoder.transformer.layer9.feed_forward.linear2.kernel:
+    blobs:
+      lut_indices:
+        offset: 4487616
+      lut_palette:
+        offset: 4585984
+      scales:
+        offset: 4586560
+    format: lut_4bits
+    shape:
+    - 256
+    - 768
+  decoder.transformer.layer9.feed_forward.norm.scale:
+    blobs:
+      values:
+        offset: 4283904
+    format: fp16
+    shape:
+    - 256
+  decoder.transformer.layer9.self_attention.attention.i_proj.qkv_proj.k_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4215488
+      lut_palette:
+        offset: 4231936
+      scales:
+        offset: 4232256
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer9.self_attention.attention.i_proj.qkv_proj.q_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4181504
+      lut_palette:
+        offset: 4214336
+      scales:
+        offset: 4214912
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer9.self_attention.attention.i_proj.qkv_proj.v_proj.kernel:
+    blobs:
+      lut_indices:
+        offset: 4232576
+      lut_palette:
+        offset: 4249024
+      scales:
+        offset: 4249344
+    format: lut_4bits
+    shape:
+    - 128
+    - 256
+  decoder.transformer.layer9.self_attention.attention.o_proj.conv.kernel:
+    blobs:
+      lut_indices:
+        offset: 4249920
+      lut_palette:
+        offset: 4282752
+      scales:
+        offset: 4283328
+    format: lut_4bits
+    shape:
+    - 256
+    - 256
+  decoder.transformer.layer9.self_attention.attention.scale_key.scale:
+    blobs:
+      values:
+        offset: 4249792
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer9.self_attention.attention.scale_query.scale:
+    blobs:
+      values:
+        offset: 4249664
+    format: fp16
+    shape:
+    - 32
+  decoder.transformer.layer9.self_attention.norm.scale:
+    blobs:
+      values:
+        offset: 4180928
+    format: fp16
+    shape:
+    - 256

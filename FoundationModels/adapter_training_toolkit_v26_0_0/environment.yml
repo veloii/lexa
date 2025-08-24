@@ -1,0 +1,9 @@
+name: adapter_training_toolkit_v26_0_0
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - -r requirements.txt

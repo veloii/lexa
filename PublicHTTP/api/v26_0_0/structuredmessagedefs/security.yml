@@ -1,0 +1,136 @@
+- name: security
+  type: category
+  children:
+    - name: authentication
+      type: group
+      schema:
+        expiration time:
+          description: Expiration time
+          type: datetime
+          optional: true
+      children:
+        - type: item
+          name: Password Reset
+          description: Contains 'password reset' OR 'reset your password' OR 'forgot password'
+          schema:
+            reset password:
+              description: Reset password URL
+              type: url
+              optional: true
+            report:
+              description: Report suspicious activity URL
+              type: url
+              optional: true
+          properties:
+            title: Password Reset
+            actions:
+              - label: Reset password
+                variant: prominent
+                link: $reset password
+              - label: Report
+                variant: secondary
+                link: $report
+        - type: item
+          name: Email Verification
+          description: Contains 'verify email' OR 'email verification' OR 'confirm email'
+          schema:
+            verify email:
+              description: Verify email URL
+              type: url
+              optional: true
+          properties:
+            title: Email Verification
+            actions:
+              - label: Verify
+                variant: prominent
+                link: $verify email
+        - type: item
+          name: Code
+          description: Contains 'verification code' OR 'security code' OR 'authentication code'
+          schema:
+            code:
+              description: Verification code
+              type: string
+          properties:
+            title: Verification Code
+
+    - name: login activity
+      type: group
+      schema:
+        location:
+          description: Location
+          type: string
+          optional: true
+        device:
+          description: Device information
+          type: string
+          optional: true
+        time:
+          description: Time of activity
+          type: datetime
+          optional: true
+        check activity:
+          description: Check activity URL
+          type: url
+          optional: true
+        this was me:
+          description: Confirm this was me URL
+          type: url
+          optional: true
+        this wasnt me:
+          description: Report unauthorized access URL
+          type: url
+          optional: true
+      properties:
+        actions:
+          - label: This was me
+            variant: secondary
+            link: $this was me
+          - label: This wasn't me
+            variant: prominent
+            link: $this wasnt me
+          - label: Check activity
+            variant: secondary
+            link: $check activity
+      children:
+        - type: item
+          name: Login
+          description: Contains 'successful login' OR 'signed in' OR 'login from'
+          properties:
+            title: New Login
+        - type: item
+          name: Login Attempt
+          description: Contains 'login attempt' OR 'failed login' OR 'unsuccessful login'
+          properties:
+            title: Login Attempt
+        - type: item
+          name: OAuth Alert
+          description: Contains 'oauth' OR 'third-party access' OR 'app connected'
+          schema:
+            service name:
+              description: Service name
+              type: string
+          properties:
+            title: OAuth Alert
+
+    - name: account security
+      type: group
+      children:
+        - type: item
+          name: Account Locked
+          description: Contains 'account locked' OR 'account suspended' OR 'account disabled'
+          schema:
+            reason:
+              description: Reason for account lock
+              type: string
+              optional: true
+            support button:
+              description: Contact support URL
+              type: url
+              optional: true
+            unlock button:
+              description: Unlock account URL
+              type: url
+              optional: true
+          properties:
+            title: Account Locked

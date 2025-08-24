@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E31AADA2E3D38D6009E35CE /* CasePaths in Frameworks */ = {isa = PBXBuildFile; productRef = 3E31AAD92E3D38D6009E35CE /* CasePaths */; };
+		3E31AADC2E3D38D6009E35CE /* CasePathsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3E31AADB2E3D38D6009E35CE /* CasePathsCore */; };
+		3E412C682E3D48B1007A2C6C /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 3E412C672E3D48B1007A2C6C /* KeychainAccess */; };
+		3E44DCF42E3D6CC300C646E1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3E44DCF32E3D6CC300C646E1 /* GoogleSignIn */; };
+		3E44DCF62E3D6CC300C646E1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3E44DCF52E3D6CC300C646E1 /* GoogleSignInSwift */; };
+		3E4EF1A82E4E37ED00AB0AFC /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 3E4EF1A72E4E37ED00AB0AFC /* Yams */; };
+		3E78591C2E3E4778006346CB /* GTMAppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3E78591B2E3E4778006346CB /* GTMAppAuth */; };
+		3E8007782E47A37B00D54EB1 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8007772E47A37B00D54EB1 /* SwiftSoup */; };
+		3E9DDBF12E55EDE500A86D4F /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9DDBF02E55EDE500A86D4F /* Yams */; };
+		3E9DDBF32E55EDF100A86D4F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9DDBF22E55EDF100A86D4F /* SwiftSoup */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E8007812E47A3A200D54EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E31AAAA2E3D0148009E35CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E31AAB12E3D0148009E35CE;
+			remoteInfo = Lexra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E31AAB22E3D0148009E35CE /* Lexa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E80077D2E47A3A200D54EB1 /* LexaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LexaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8007892E47A83500D54EB1 /* Lexa.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lexa.xctestplan; sourceTree = "<group>"; };
+		3E9DDBD42E55EB9A00A86D4F /* LexaTestPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LexaTestPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3E7859212E3E4889006346CB /* Exceptions for "Lexa" folder in "Lexa" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3E31AAB12E3D0148009E35CE /* Lexa */;
+		};
+		3E9DDBE92E55ED9900A86D4F /* Exceptions for "Features" folder in "LexaTestPlayground" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ApiClient/ApiClient.swift,
+				LanguageModel/LanguageModelMessageContent.swift,
+				LexaApi/LexaApi.swift,
+				LexaApi/LexaApiClient.swift,
+				StructuredMessage/StructuredMessageService.swift,
+				StructuredMessageDef/StructuredMessageDefModel.swift,
+				StructuredMessageDef/StructuredMessageDefRepo.swift,
+				StructuredMessageDef/StructuredMessageDefService.swift,
+			);
+			target = 3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */;
+		};
+		3E9DDBEF2E55EDD400A86D4F /* Exceptions for "Utils" folder in "LexaTestPlayground" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Dictionary+DeepMerge.swift",
+				Environment.swift,
+				Index.swift,
+				Tasks.swift,
+			);
+			target = 3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */;
+		};
+		3E9DDBFA2E55F06400A86D4F /* Exceptions for "Components" folder in "LexaTestPlayground" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AsyncButton.swift,
+			);
+			target = 3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */;
+		};
+		3E9DDC0B2E56428C00A86D4F /* Exceptions for "LexaTestPlayground" folder in "LexaTestPlayground" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3E31AAB42E3D0148009E35CE /* Lexa */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E7859212E3E4889006346CB /* Exceptions for "Lexa" folder in "Lexa" target */,
+			);
+			path = Lexa;
+			sourceTree = "<group>";
+		};
+		3E80077E2E47A3A200D54EB1 /* LexaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LexaTests;
+			sourceTree = "<group>";
+		};
+		3E8007AB2E47F76700D54EB1 /* Components */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E9DDBFA2E55F06400A86D4F /* Exceptions for "Components" folder in "LexaTestPlayground" target */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3E8007C12E47F76700D54EB1 /* Features */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E9DDBE92E55ED9900A86D4F /* Exceptions for "Features" folder in "LexaTestPlayground" target */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3E8007C52E47F76700D54EB1 /* Utils */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E9DDBEF2E55EDD400A86D4F /* Exceptions for "Utils" folder in "LexaTestPlayground" target */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E9DDBD52E55EB9A00A86D4F /* LexaTestPlayground */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3E9DDC0B2E56428C00A86D4F /* Exceptions for "LexaTestPlayground" folder in "LexaTestPlayground" target */,
+			);
+			path = LexaTestPlayground;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E31AAAF2E3D0148009E35CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E44DCF42E3D6CC300C646E1 /* GoogleSignIn in Frameworks */,
+				3E412C682E3D48B1007A2C6C /* KeychainAccess in Frameworks */,
+				3E44DCF62E3D6CC300C646E1 /* GoogleSignInSwift in Frameworks */,
+				3E31AADA2E3D38D6009E35CE /* CasePaths in Frameworks */,
+				3E31AADC2E3D38D6009E35CE /* CasePathsCore in Frameworks */,
+				3E8007782E47A37B00D54EB1 /* SwiftSoup in Frameworks */,
+				3E4EF1A82E4E37ED00AB0AFC /* Yams in Frameworks */,
+				3E78591C2E3E4778006346CB /* GTMAppAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E80077A2E47A3A200D54EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E9DDBD12E55EB9A00A86D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E9DDBF12E55EDE500A86D4F /* Yams in Frameworks */,
+				3E9DDBF32E55EDF100A86D4F /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E31AAA92E3D0148009E35CE = {
+			isa = PBXGroup;
+			children = (
+				3E8007A92E47F75400D54EB1 /* Shared */,
+				3E8007892E47A83500D54EB1 /* Lexa.xctestplan */,
+				3E31AAB42E3D0148009E35CE /* Lexa */,
+				3E80077E2E47A3A200D54EB1 /* LexaTests */,
+				3E9DDBD52E55EB9A00A86D4F /* LexaTestPlayground */,
+				3E8007A22E47F4B100D54EB1 /* Frameworks */,
+				3E31AAB32E3D0148009E35CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E31AAB32E3D0148009E35CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E31AAB22E3D0148009E35CE /* Lexa.app */,
+				3E80077D2E47A3A200D54EB1 /* LexaTests.xctest */,
+				3E9DDBD42E55EB9A00A86D4F /* LexaTestPlayground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E8007A22E47F4B100D54EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E8007A92E47F75400D54EB1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3E8007AB2E47F76700D54EB1 /* Components */,
+				3E8007C12E47F76700D54EB1 /* Features */,
+				3E8007C52E47F76700D54EB1 /* Utils */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E31AAB12E3D0148009E35CE /* Lexa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E31AABF2E3D0149009E35CE /* Build configuration list for PBXNativeTarget "Lexa" */;
+			buildPhases = (
+				3E31AAAE2E3D0148009E35CE /* Sources */,
+				3E31AAAF2E3D0148009E35CE /* Frameworks */,
+				3E31AAB02E3D0148009E35CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3E31AAB42E3D0148009E35CE /* Lexa */,
+				3E8007AB2E47F76700D54EB1 /* Components */,
+				3E8007C12E47F76700D54EB1 /* Features */,
+				3E8007C52E47F76700D54EB1 /* Utils */,
+			);
+			name = Lexa;
+			packageProductDependencies = (
+				3E31AAD92E3D38D6009E35CE /* CasePaths */,
+				3E31AADB2E3D38D6009E35CE /* CasePathsCore */,
+				3E412C672E3D48B1007A2C6C /* KeychainAccess */,
+				3E44DCF32E3D6CC300C646E1 /* GoogleSignIn */,
+				3E44DCF52E3D6CC300C646E1 /* GoogleSignInSwift */,
+				3E78591B2E3E4778006346CB /* GTMAppAuth */,
+				3E8007772E47A37B00D54EB1 /* SwiftSoup */,
+				3E4EF1A72E4E37ED00AB0AFC /* Yams */,
+			);
+			productName = Lexra;
+			productReference = 3E31AAB22E3D0148009E35CE /* Lexa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E80077C2E47A3A200D54EB1 /* LexaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8007832E47A3A200D54EB1 /* Build configuration list for PBXNativeTarget "LexaTests" */;
+			buildPhases = (
+				3E8007792E47A3A200D54EB1 /* Sources */,
+				3E80077A2E47A3A200D54EB1 /* Frameworks */,
+				3E80077B2E47A3A200D54EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E8007822E47A3A200D54EB1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3E80077E2E47A3A200D54EB1 /* LexaTests */,
+			);
+			name = LexaTests;
+			packageProductDependencies = (
+			);
+			productName = LexraTests;
+			productReference = 3E80077D2E47A3A200D54EB1 /* LexaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E9DDBDC2E55EB9B00A86D4F /* Build configuration list for PBXNativeTarget "LexaTestPlayground" */;
+			buildPhases = (
+				3E9DDBD02E55EB9A00A86D4F /* Sources */,
+				3E9DDBD12E55EB9A00A86D4F /* Frameworks */,
+				3E9DDBD22E55EB9A00A86D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3E9DDBD52E55EB9A00A86D4F /* LexaTestPlayground */,
+			);
+			name = LexaTestPlayground;
+			packageProductDependencies = (
+				3E9DDBF02E55EDE500A86D4F /* Yams */,
+				3E9DDBF22E55EDF100A86D4F /* SwiftSoup */,
+			);
+			productName = LexaTestPlayground;
+			productReference = 3E9DDBD42E55EB9A00A86D4F /* LexaTestPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E31AAAA2E3D0148009E35CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					3E31AAB12E3D0148009E35CE = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					3E80077C2E47A3A200D54EB1 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 3E31AAB12E3D0148009E35CE;
+					};
+					3E9DDBD32E55EB9A00A86D4F = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 3E31AAAD2E3D0148009E35CE /* Build configuration list for PBXProject "Lexa" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E31AAA92E3D0148009E35CE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3E31AAD82E3D38D6009E35CE /* XCRemoteSwiftPackageReference "swift-case-paths" */,
+				3E412C662E3D48B1007A2C6C /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				3E44DCF22E3D6CC300C646E1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				3E78591A2E3E4778006346CB /* XCRemoteSwiftPackageReference "GTMAppAuth" */,
+				3E8007762E47A37B00D54EB1 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				3E4EF1A62E4E37ED00AB0AFC /* XCRemoteSwiftPackageReference "Yams" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3E31AAB32E3D0148009E35CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E31AAB12E3D0148009E35CE /* Lexa */,
+				3E80077C2E47A3A200D54EB1 /* LexaTests */,
+				3E9DDBD32E55EB9A00A86D4F /* LexaTestPlayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E31AAB02E3D0148009E35CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E80077B2E47A3A200D54EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E9DDBD22E55EB9A00A86D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E31AAAE2E3D0148009E35CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E8007792E47A3A200D54EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E9DDBD02E55EB9A00A86D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E8007822E47A3A200D54EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E31AAB12E3D0148009E35CE /* Lexa */;
+			targetProxy = 3E8007812E47A3A200D54EB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E31AABD2E3D0149009E35CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E31AABE2E3D0149009E35CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E31AAC02E3D0149009E35CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lexra/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.lexra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E31AAC12E3D0149009E35CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lexra/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.lexra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E8007842E47A3A200D54EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.LexraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lexa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lexa";
+			};
+			name = Debug;
+		};
+		3E8007852E47A3A200D54EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.LexraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lexa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lexa";
+			};
+			name = Release;
+		};
+		3E9DDBDD2E55EB9B00A86D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LexaTestPlayground/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.LexaTestPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3E9DDBDE2E55EB9B00A86D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GHN2UAB77;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readonly;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LexaTestPlayground/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.veloi.LexaTestPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E31AAAD2E3D0148009E35CE /* Build configuration list for PBXProject "Lexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E31AABD2E3D0149009E35CE /* Debug */,
+				3E31AABE2E3D0149009E35CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E31AABF2E3D0149009E35CE /* Build configuration list for PBXNativeTarget "Lexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E31AAC02E3D0149009E35CE /* Debug */,
+				3E31AAC12E3D0149009E35CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E8007832E47A3A200D54EB1 /* Build configuration list for PBXNativeTarget "LexaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8007842E47A3A200D54EB1 /* Debug */,
+				3E8007852E47A3A200D54EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E9DDBDC2E55EB9B00A86D4F /* Build configuration list for PBXNativeTarget "LexaTestPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E9DDBDD2E55EB9B00A86D4F /* Debug */,
+				3E9DDBDE2E55EB9B00A86D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E31AAD82E3D38D6009E35CE /* XCRemoteSwiftPackageReference "swift-case-paths" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-case-paths";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+		3E412C662E3D48B1007A2C6C /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3E44DCF22E3D6CC300C646E1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		3E4EF1A62E4E37ED00AB0AFC /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		3E78591A2E3E4778006346CB /* XCRemoteSwiftPackageReference "GTMAppAuth" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GTMAppAuth";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3E8007762E47A37B00D54EB1 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E31AAD92E3D38D6009E35CE /* CasePaths */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E31AAD82E3D38D6009E35CE /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePaths;
+		};
+		3E31AADB2E3D38D6009E35CE /* CasePathsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E31AAD82E3D38D6009E35CE /* XCRemoteSwiftPackageReference "swift-case-paths" */;
+			productName = CasePathsCore;
+		};
+		3E412C672E3D48B1007A2C6C /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E412C662E3D48B1007A2C6C /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		3E44DCF32E3D6CC300C646E1 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E44DCF22E3D6CC300C646E1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		3E44DCF52E3D6CC300C646E1 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E44DCF22E3D6CC300C646E1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		3E4EF1A72E4E37ED00AB0AFC /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E4EF1A62E4E37ED00AB0AFC /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		3E78591B2E3E4778006346CB /* GTMAppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E78591A2E3E4778006346CB /* XCRemoteSwiftPackageReference "GTMAppAuth" */;
+			productName = GTMAppAuth;
+		};
+		3E8007772E47A37B00D54EB1 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E8007762E47A37B00D54EB1 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		3E9DDBF02E55EDE500A86D4F /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E4EF1A62E4E37ED00AB0AFC /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		3E9DDBF22E55EDF100A86D4F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E8007762E47A37B00D54EB1 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3E31AAAA2E3D0148009E35CE /* Project object */;
+}

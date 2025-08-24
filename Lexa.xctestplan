@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "1BB99CE9-7A6A-4185-AE2C-E176B8FFDA60",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:Lexa.xcodeproj",
+          "identifier" : "3E31AAB12E3D0148009E35CE",
+          "name" : "Lexa"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Lexa.xcodeproj",
+      "identifier" : "3E31AAB12E3D0148009E35CE",
+      "name" : "Lexa"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Lexa.xcodeproj",
+        "identifier" : "3E80077C2E47A3A200D54EB1",
+        "name" : "LexaTests"
+      }
+    }
+  ],
+  "version" : 1
+}

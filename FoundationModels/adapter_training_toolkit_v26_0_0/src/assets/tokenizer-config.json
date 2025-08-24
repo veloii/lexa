@@ -1,0 +1,13 @@
+{
+  "__tamm_type__": "tokenizers:AFMTokenizerConfig",
+  "extra_properties": {
+    "bot_id": 150000,
+    "eot_id": 150001,
+    "bot_token": "<turn_start>",
+    "eot_token": "<turn_end>",
+    "boi_id": 150013,
+    "eoi_id": 150014,
+    "boi_token": "<image_start>",
+    "eoi_token": "<image_end>"
+  }
+}

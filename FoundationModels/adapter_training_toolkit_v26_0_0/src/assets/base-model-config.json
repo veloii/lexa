@@ -1,0 +1,16 @@
+{
+  "__tamm_type__": "models:AFMTextV7Config",
+  "adapters": {
+    "base_adapter": {
+      "__tamm_type__": "adapters:LoRAModelAdapter",
+      "alpha": 16,
+      "rank": 32
+    }
+  },
+  "arch_optimizers": {
+    "kvquant": {
+      "__tamm_type__": "ao:KVQuantArchOptimizer",
+      "freeze_qparams": true
+    }
+  }
+}

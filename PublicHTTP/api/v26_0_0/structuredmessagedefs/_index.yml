@@ -1,0 +1,5 @@
+version: 18
+absolutePaths:
+  - /api/v26_0_0/structuredmessagedefs/ecommerce.yml
+  - /api/v26_0_0/structuredmessagedefs/payments.yml
+  - /api/v26_0_0/structuredmessagedefs/security.yml

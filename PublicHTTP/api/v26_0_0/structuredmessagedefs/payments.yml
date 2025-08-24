@@ -1,0 +1,193 @@
+- name: payments
+  type: category
+  children:
+    - name: payment
+      type: group
+      schema:
+        service name:
+          description: Service or merchant name
+          type: string
+        amount:
+          description: Payment amount
+          type: currency
+        payment method:
+          description: Payment method used
+          type: string
+        transaction id:
+          description: Transaction ID
+          type: string
+          optional: true
+        view receipt:
+          description: View receipt URL
+          type: url
+          optional: true
+        update payment method:
+          description: Update payment method URL
+          type: url
+          optional: true
+      properties:
+        subtitle: $service name
+        actions:
+          - label: View receipt
+            variant: prominent
+            link: $view receipt
+      children:
+        - type: item
+          name: Payment Receipt
+          description: Contains 'payment received' OR 'receipt' OR 'payment successful' OR 'charged'
+          properties:
+            title: Payment Receipt
+        - type: item
+          name: Payment Failed
+          description: Contains 'payment failed' OR 'payment declined' OR 'unsuccessful' OR 'error'
+          schema:
+            error message:
+              description: Error message
+              type: string
+          properties:
+            title: Payment Failed
+            actions:
+              - label: Update payment method
+                variant: prominent
+                link: $update payment method
+        - type: item
+          name: Invoice Due
+          description: Contains 'invoice' OR 'bill due' OR 'payment due' OR 'outstanding'
+          schema:
+            due date:
+              description: Due date
+              type: datetime
+            view invoice:
+              description: View invoice URL
+              type: url
+              optional: true
+          properties:
+            title: Invoice Due
+            actions:
+              - label: View invoice
+                variant: prominent
+                link: $view invoice
+
+    - name: subscription
+      type: group
+      schema:
+        service name:
+          description: Service name
+          type: string
+        amount:
+          description: Subscription amount
+          type: currency
+        payment method:
+          description: Payment method
+          type: string
+        renewal date:
+          description: Renewal or end date
+          type: datetime
+        update payment method:
+          description: Update payment method URL
+          type: url
+          optional: true
+        manage subscription:
+          description: Manage subscription URL
+          type: url
+          optional: true
+      properties:
+        subtitle: $service name
+        actions:
+          - label: Update payment method
+            variant: prominent
+            link: $update payment method
+          - label: Manage
+            variant: secondary
+            link: $manage subscription
+      children:
+        - type: item
+          name: Free Trial Ending Soon
+          description: Contains 'free trial' AND ('ending' OR 'expires' OR 'ends soon')
+          properties:
+            title: Free Trial Ending Soon
+        - type: item
+          name: Subscription Ending Soon
+          description: Contains 'subscription' AND ('ending' OR 'expires' OR 'ends soon' OR 'renewal')
+          properties:
+            title: Subscription Ending Soon
+        - type: item
+          name: Subscription Renewal
+          description: Contains 'subscription renewed' OR 'auto-renewal' OR 'renewed successfully'
+          properties:
+            title: Subscription Renewal
+            actions:
+              - label: Update payment method
+                variant: secondary
+                link: $update payment method
+              - label: Manage
+                variant: prominent
+                link: $manage subscription
+        - type: item
+          name: Subscription Cancelled
+          description: Contains 'subscription cancelled' OR 'subscription canceled' OR 'subscription ended'
+          schema:
+            end date:
+              description: End date
+              type: datetime
+            reactivate:
+              description: Reactivate subscription URL
+              type: url
+              optional: true
+          properties:
+            title: Subscription Cancelled
+            actions:
+              - label: Reactivate
+                variant: prominent
+                link: $reactivate
+
+    - name: transfer
+      type: group
+      schema:
+        amount:
+          description: Transfer amount
+          type: currency
+        reference:
+          description: Transfer reference
+          type: string
+          optional: true
+        view transfer:
+          description: View transfer URL
+          type: url
+          optional: true
+      properties:
+        actions:
+          - label: View transfer
+            variant: prominent
+            link: $view transfer
+      children:
+        - type: item
+          name: Transfer Initiated
+          description: Contains 'transfer initiated' OR 'transfer started' OR 'transfer pending'
+          schema:
+            recipient:
+              description: Transfer recipient
+              type: string
+          properties:
+            title: Transfer Initiated
+        - type: item
+          name: Transfer Failed
+          description: Contains 'transfer failed' OR 'transfer unsuccessful' OR 'transfer error'
+          schema:
+            error message:
+              description: Error message
+              type: string
+            sender:
+              description: Transfer sender
+              type: string
+          properties:
+            title: Transfer Failed
+        - type: item
+          name: Transfer Success
+          description: Contains 'transfer completed' OR 'transfer successful' OR 'money sent'
+          schema:
+            sender:
+              description: Transfer sender
+              type: string
+          properties:
+            title: Transfer Success

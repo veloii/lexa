@@ -1,0 +1,141 @@
+- name: ecommerce
+  type: category
+  children:
+    - name: order
+      type: group
+      schema:
+        order id:
+          description: Order Number
+          type: string
+          constraints:
+            unique: { on: replace }
+        item name:
+          description: Item Name
+          type: string
+        view order:
+          description: View order URL
+          type: url
+      properties:
+        subtitle: $item name
+        actions:
+          - label: View order
+            variant: prominent
+            link: $view order
+        progress:
+          type: timeline
+          steps: ['confirmed', 'shipped', 'delivered']
+      children:
+        - type: item
+          name: Order Delivered 
+          description: Contains 'delivered' OR 'arrived' OR 'dropped off'
+          index: 2
+          properties:
+            title: Order Delivered
+            progress:
+              current: 2
+            actions:
+              - label: View order
+                variant: prominent
+                link: $view order
+              - label: Leave feedback
+                variant: secondary
+        - type: item
+          name: Order Sent
+          description: Contains tracking number (like TQ971929031GB) OR 'shipped' OR 'dispatched' OR 'on its way'
+          index: 1
+          properties:
+            title: Order Shipped
+            progress:
+              current: 1
+        - type: item
+          name: Order Confirmed 
+          description: Contains 'order confirmation' OR 'thank you for your purchase' OR 'order received'
+          index: 0
+          properties:
+            title: Order Confirmed
+            progress:
+              current: 0
+
+    - name: offer
+      type: group
+      schema:
+        item name:
+          description: Item Name
+          type: string
+        amount:
+          description: Offer amount
+          type: currency
+        original price:
+          description: Original price
+          type: currency
+        expiration:
+          description: Offer expiration date
+          type: datetime
+        view offer:
+          description: View offer URL
+          type: url
+          optional: true
+      properties:
+        subtitle: $item name
+        actions:
+          - label: View offer
+            variant: prominent
+            link: $view offer
+      children:
+        - type: item
+          name: Offer Sent
+          description: Contains 'offer sent' OR 'your offer' OR 'offer submitted'
+          properties:
+            title: Offer Sent
+        - type: item
+          name: Offer Expired
+          description: Contains 'offer expired' OR 'offer has expired' OR 'expired'
+          properties:
+            title: Offer Expired
+        - type: item
+          name: Offer Declined
+          description: Contains 'offer declined' OR 'declined' OR 'rejected'
+          properties:
+            title: Offer Declined
+        - type: item
+          name: Counter Offer
+          description: Contains 'counter offer' OR 'counteroffer' OR 'new offer'
+          properties:
+            title: Counter Offer
+
+    - name: return
+      type: group
+      schema:
+        item name:
+          description: Item Name
+          type: string
+        amount:
+          description: Return amount
+          type: currency
+        order id:
+          description: Order Number
+          type: string
+        estimated time:
+          description: Estimated processing time
+          type: string
+        view return:
+          description: View return URL
+          type: url
+          optional: true
+      properties:
+        subtitle: $item name
+        actions:
+          - label: View return
+            variant: prominent
+            link: $view return
+      children:
+        - type: item
+          name: Return Initiated
+          description: Contains 'return initiated' OR 'return request' OR 'return started'
+          properties:
+            title: Return Initiated
+        - type: item
+          name: Refund Processed
+          description: Contains 'refund processed' OR 'refund issued' OR 'money back'
+          properties:
+            title: Refund Processed

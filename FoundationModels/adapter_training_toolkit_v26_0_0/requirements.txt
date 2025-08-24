@@ -1,0 +1,8 @@
+tqdm
+sentencepiece
+notebook
+pydantic
+ijson>=3.2.0
+coremltools==8.3.0
+torch>=2.6
+tamm~=0.1.0

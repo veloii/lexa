@@ -64,13 +64,13 @@
           type: string
         amount:
           description: Offer amount
-          type: currency
+          type: string
         original price:
           description: Original price
-          type: currency
+          type: string
         expiration:
           description: Offer expiration date
-          type: datetime
+          type: string
         view offer:
           description: View offer URL
           type: url
@@ -111,7 +111,7 @@
           type: string
         amount:
           description: Return amount
-          type: currency
+          type: string
         order id:
           description: Order Number
           type: string

@@ -9,7 +9,7 @@
           type: string
         amount:
           description: Payment amount
-          type: currency
+          type: string
         payment method:
           description: Payment method used
           type: string
@@ -56,7 +56,7 @@
           schema:
             due date:
               description: Due date
-              type: datetime
+              type: string
             view invoice:
               description: View invoice URL
               type: url
@@ -76,13 +76,13 @@
           type: string
         amount:
           description: Subscription amount
-          type: currency
+          type: string
         payment method:
           description: Payment method
           type: string
         renewal date:
           description: Renewal or end date
-          type: datetime
+          type: string
         update payment method:
           description: Update payment method URL
           type: url
@@ -129,7 +129,7 @@
           schema:
             end date:
               description: End date
-              type: datetime
+              type: string
             reactivate:
               description: Reactivate subscription URL
               type: url
@@ -146,7 +146,7 @@
       schema:
         amount:
           description: Transfer amount
-          type: currency
+          type: string
         reference:
           description: Transfer reference
           type: string

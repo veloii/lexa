@@ -8,7 +8,7 @@ struct LexaTestPlaygroundApp: App {
     let singlePromptTestConfig: SinglePromptStructuredMessageTestConfig
 
     init() {
-        let lexaApiClient = LiveLexaApiClient(baseURL: URL(string: "https://lexa.aria.town")!)
+        let lexaApiClient = LiveLexaApiClient(baseURL: URL(string: "https://lexa.email")!)
         self.lexaApiClient = lexaApiClient
         self.structuredMessageDefRepo = LiveStructuredMessageDefRepo()
         self.structuredMessageInputRepo = StructuredMessageInputRepo()

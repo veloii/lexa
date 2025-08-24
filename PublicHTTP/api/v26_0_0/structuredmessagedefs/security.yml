@@ -6,7 +6,7 @@
       schema:
         expiration time:
           description: Expiration time
-          type: datetime
+          type: string
           optional: true
       children:
         - type: item
@@ -67,7 +67,7 @@
           optional: true
         time:
           description: Time of activity
-          type: datetime
+          type: string
           optional: true
         check activity:
           description: Check activity URL

@@ -24,7 +24,7 @@ extension LexaApi {
         typealias ResponseType = StructuredMessageDefsRoot
         
         var response: LexaApi.HTTPResponseType { .yaml }
-        var path: String { "/api/v26_0_0/structuredmessagedefs/root.yml" }
+        var path: String { "/api/v26_0_0/structuredmessagedefs/_index.yml" }
         var method: HTTPMethod { .GET }
         var queryParameters: [String: String]? { nil }
         var body: Encodable? { nil }

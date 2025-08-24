@@ -345,6 +345,7 @@ struct SinglePromptStructuredMessageClassificationTestView: View {
             }
             .frame(maxHeight: .infinity)
             .alert(error: $lexaInputsStatus.error)
+            .alert(error: $lexaDefsStatus.error)
             .alert(error: $status.error)
         }
     }
@@ -369,10 +370,16 @@ struct SinglePromptStructuredMessageClassificationTestView: View {
     private func getDefsFromLexa() async {
         await $lexaDefsStatus.resolve {
             let root = try await lexaApiClient.perform(LexaApi.GetStructuredMessageDefsRoot())
+            print(root)
             var allMessages = [StructuredMessageDefNode]()
             for path in root.absolutePaths {
-                let messages = try await lexaApiClient.perform(LexaApi.GetStructuredMessageDef(path: path))
-                allMessages.append(contentsOf: messages)
+                do {
+                    let messages = try await lexaApiClient.perform(LexaApi.GetStructuredMessageDef(path: path))
+                    print(messages)
+                    allMessages.append(contentsOf: messages)
+                } catch let error {
+                    print(error)
+                }
             }
             structuredMessageDefRepo.all = allMessages
         }
